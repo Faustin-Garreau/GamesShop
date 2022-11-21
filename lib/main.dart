@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
       getPages: [
         GetPage(
           name: "/home",
-          page: () => GetxGameView(),
+          page: () => const GetxGameView(),
           binding: GetxGameBindings(),
         )
       ],
