@@ -16,9 +16,9 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       title: 'Game Shop',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.red,
       ),
-      color: Colors.red,
+      color: Colors.black,
       initialBinding: GetxGameBindings(),
       getPages: [
         GetPage(
