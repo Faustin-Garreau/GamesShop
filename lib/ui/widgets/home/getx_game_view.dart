@@ -17,11 +17,11 @@ class GetxGameView extends GetView<GetxGameController> {
         child: Column(
           children: [
             const Text(
-              "Bienvenue au Flutter Store !",
+              "Bienvenue au Game Shop !",
               style: TextStyle(fontSize: 35),
             ),
             const Text(
-              "Liste de produits :",
+              "Liste de jeux :",
               style: TextStyle(
                 fontSize: 20,
               ),
