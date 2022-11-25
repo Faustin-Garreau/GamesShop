@@ -1,9 +1,10 @@
-import 'package:game_shop/ui/widgets/home/getx_game_bindings.dart';
-
 import 'package:flutter/material.dart';
 import 'package:game_shop/ui/widgets/home/getx_game_view.dart';
+import 'package:game_shop/ui/widgets/home/getx_game_bindings.dart';
+import 'package:game_shop/ui/widgets/login/getx_login_bindings.dart';
 import 'package:game_shop/ui/widgets/login/getx_login_view.dart';
-import 'package:game_shop/ui/widgets/signUp/getx_signUp_view.dart';
+import 'package:game_shop/ui/widgets/signup/getx_signup_bindings.dart';
+import 'package:game_shop/ui/widgets/signup/getx_signup_view.dart';
 import 'package:get/get.dart';
 
 // julien.mangeat@mail-formateur.net
@@ -39,12 +40,6 @@ Future<void> main() async {
     await FirebaseAuth.instance.useAuthEmulator('localhost', 9099);
   }
 
-  FirebaseAuth.instance.authStateChanges().listen((User? user) {
-    if (user != null) {
-      print(user.uid);
-    }
-  });
-
   runApp(const MyApp());
 }
 
@@ -73,12 +68,12 @@ class MyApp extends StatelessWidget {
         GetPage(
           name: "/login",
           page: () => const GetxLoginView(),
-          // binding: GetxBindings(),
+          binding: GetxLoginBindings(),
         ),
         GetPage(
           name: "/signup",
-          page: () => const GetxSignUpView(),
-          // binding: GetxBindings(),
+          page: () => const GetxSignupView(),
+          binding: GetxSignupBindings(),
         )
       ],
       initialRoute: "/home",

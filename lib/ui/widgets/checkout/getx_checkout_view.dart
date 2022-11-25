@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:game_shop/ui/widgets/checkout/getx_checkout_controller.dart';
 import 'package:game_shop/ui/widgets/login/getx_login_view.dart';
-import 'package:game_shop/ui/widgets/signUp/getx_signUp_view.dart';
+import 'package:game_shop/ui/widgets/signup/getx_signup_view.dart';
 import 'package:get/get.dart';
-import 'package:game_shop/ui/widgets/home/getx_game_controller.dart';
 
 class GetxCheckoutView extends GetView<GetxCheckoutController> {
   const GetxCheckoutView({super.key});
@@ -83,7 +82,7 @@ class GetxCheckoutView extends GetView<GetxCheckoutController> {
                       context,
                       MaterialPageRoute(
                         builder: (context) {
-                          return GetxSignUpView();
+                          return GetxSignupView();
                         },
                       ),
                     );

@@ -9,21 +9,23 @@ class GetxLoginView extends GetView<GetxLoginController> {
 
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
-      child: Row(
-        children: [
-          Expanded(
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: const [
-                SizedBox(
-                  width: 450,
-                  child: LoginForm(),
-                ),
-              ],
+    return Material(
+      child: SingleChildScrollView(
+        child: Row(
+          children: [
+            Expanded(
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: const [
+                  SizedBox(
+                    width: 450,
+                    child: LoginForm(),
+                  ),
+                ],
+              ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }

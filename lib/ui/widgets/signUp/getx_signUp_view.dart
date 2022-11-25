@@ -1,15 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 
 import 'package:game_shop/ui/signup_form.dart';
 
-class GetxSignUpView extends StatelessWidget {
-  const GetxSignUpView({Key? key}) : super(key: key);
+class GetxSignupView extends StatelessWidget {
+  const GetxSignupView({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
-      child: Container(
+    return Material(
+      child: SingleChildScrollView(
         child: Row(
           children: [
             Expanded(

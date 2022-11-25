@@ -14,7 +14,7 @@ class GameItem extends StatelessWidget {
               Row(
                 children: [
                   Card(
-                    color: Color.fromARGB(255, 49, 49, 49),
+                    color: const Color.fromARGB(255, 49, 49, 49),
                     shadowColor: Colors.black,
                     elevation: 5,
                     shape: RoundedRectangleBorder(
