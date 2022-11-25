@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:game_shop/ui/game_item.dart';
+import 'package:game_shop/ui/widgets/checkout/getx_checkout_controller.dart';
 import 'package:game_shop/ui/widgets/login/getx_login_view.dart';
 import 'package:game_shop/ui/widgets/signUp/getx_signUp_view.dart';
 import 'package:get/get.dart';
 import 'package:game_shop/ui/widgets/home/getx_game_controller.dart';
 
-class GetxGameView extends GetView<GetxGameController> {
-  const GetxGameView({super.key});
+class GetxCheckoutView extends GetView<GetxCheckoutController> {
+  const GetxCheckoutView({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -36,7 +36,7 @@ class GetxGameView extends GetView<GetxGameController> {
                             context,
                             MaterialPageRoute(
                               builder: (context) {
-                                return GetxGameView();
+                                return GetxCheckoutView();
                               },
                             ),
                           );
@@ -102,16 +102,9 @@ class GetxGameView extends GetView<GetxGameController> {
         child: Column(
           children: [
             Text(
-              "Bienvenue à Game Shop !",
+              "Votre panier ;",
               style: TextStyle(fontSize: 35),
             ),
-            Text(
-              "Liste de jeux :",
-              style: TextStyle(
-                fontSize: 20,
-              ),
-            ),
-            GameItem()
           ],
         ),
       ),

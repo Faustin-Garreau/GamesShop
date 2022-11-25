@@ -8,10 +8,4 @@ class GameRepository {
     Game(id: 2, name: "Game2", price: 12.99, icon: "icon"),
     Game(id: 3, name: "Game2", price: 12.99, icon: "icon")
   ];
-
-  var gamesMap = games.map((e) {
-    return {e.id, e.name, e.price, e.icon};
-  }).toList();
-
-  print(gamesMap);
 }
